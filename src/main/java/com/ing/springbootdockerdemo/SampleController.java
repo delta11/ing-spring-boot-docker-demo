@@ -10,6 +10,7 @@ import java.util.List;
 @RestController
 @EnableAutoConfiguration
 public class SampleController {
+
     @Autowired
     TodoRepository repository;
 
@@ -22,6 +23,7 @@ public class SampleController {
     @RequestMapping(value = "/", method = RequestMethod.POST)
     Todo home(@RequestBody Todo input) {
         repository.save(input);
+        System.out.println(input);
         return input;
     }
 

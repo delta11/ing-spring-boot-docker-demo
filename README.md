@@ -1,4 +1,4 @@
-g#Course Steps
+#Course Steps
 These steps are also the branches present in this repo
 
 * start empty mvn project
